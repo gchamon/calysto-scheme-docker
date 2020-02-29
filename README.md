@@ -2,4 +2,4 @@
 
 ## Usage
 
-`docker run -it -p 8888:80 -v $(pwd):/app gchamon/calysto-scheme-alpine`
+`docker run -it --rm -p 8888:80 -v $(pwd):/app -u $(id -u $USER):$(id -g $USER) gchamon/calysto-scheme-alpine`
