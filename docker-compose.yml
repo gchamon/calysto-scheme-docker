@@ -1,0 +1,7 @@
+version: "3"
+services:
+  calysto_scheme:
+    image: gchamon/calysto-scheme-alpine
+    build: ./jupyter-scheme
+    ports:
+      - "8888:8888"
